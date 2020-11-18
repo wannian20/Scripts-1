@@ -86,8 +86,8 @@ if ($.isNode()) {
       ARTBODYs = process.env.YOUTH_ARTBODY.split()
   };
   
-  if (process.env.YOUTH_REDBODY && process.env.YOUTH_REDBODY.indexOf('&') > -1) {
-  REDBODYs = process.env.YOUTH_REDBODY.split('&');
+  if (process.env.YOUTH_REDBODY && process.env.YOUTH_REDBODY.indexOf('\n') > -1) {
+  REDBODYs = process.env.YOUTH_REDBODY.split('\n');
   } else {
       REDBODYs = process.env.YOUTH_REDBODY.split()
   };
